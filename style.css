@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ff00ff, #00ffff, #ffff00, #ff0066);
+    background-size: 800% 800%;
+    animation: moveGradient 6s ease-in-out infinite;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+input[type="search"] {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    font-size: 0.65rem;
+}
+
+li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+.joker-details {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7);
+    max-width: 600px;
+    text-align: center;
+}
+
+.joker-details img {
+    max-width: 75%;
+    display: block;
+    margin: 0 auto 1rem auto;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
+
+.joker-details p {
+    margin: 0.4rem 0;
+    font-size: 0.7rem;
+}
+
+.mult-effect {
+    color: red;
+    font-weight: bold;
+}
+
+.cost-gold {
+    color: gold;
+}
+
+.rarity-common { color: #66ccff; }
+.rarity-uncommon { color: #66ff66; }
+.rarity-rare { color: #ff6666; }
+
+#addToRunButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.65rem;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+#jokerRunContainer {
+    margin-top: 3rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#jokerRunSlots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.joker-card-slot {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 140px;
+    position: relative;
+}
+
+.joker-card-slot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    will-change: transform;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.6rem;
+}

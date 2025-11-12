@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Balatro Jokers</title>
+  <link href="style.css" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Search</h1>
+  <input type="search" id="searchInput" placeholder="Type a Joker name..." autocomplete="off" />
+  <ul id="suggestions"></ul>
+
+  <div id="jokerDetails" class="joker-details" style="display:none;">
+    <h2 id="jokerName"></h2>
+    <img id="jokerImage" src="" alt="Imagen del Joker" style="display:none;" />
+    <p id="jokerDescription"></p>
+    <p><strong>Cost:</strong> <span id="jokerCost" class="cost-gold"></span></p>
+    <p><strong>Rarity:</strong> <span id="jokerRarity"></span></p>
+  </div>
+
+  <button id="addToRunButton" style="display:none;">➕ Add to Hand</button>
+
+  <div id="jokerRunContainer">
+    <h2 style="text-align:center; font-size: 1rem; margin-bottom: 1rem;">Jokers in Hand</h2>
+    <div id="jokerRunSlots"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
