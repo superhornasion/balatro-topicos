@@ -2,7 +2,7 @@
 
 // **NUEVO: URL BASE DE LA API DEL BACKEND (ALB)**
 // **REEMPLAZA ESTE VALOR CON EL DNS REAL DE TU ALB DE AWS (ej: http://balatro-alb-1234.elb.amazonaws.com)**
-const API_BASE_URL = 'http://balatro-alb-75740553.us-east-1.elb.amazonaws.com'; 
+const API_BASE_URL = 'https://balatro-alb-75740553.us-east-1.elb.amazonaws.com'; 
 
 const searchInput = document.getElementById('searchInput');
 const suggestions = document.getElementById('suggestions');
@@ -213,3 +213,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
 });
+
